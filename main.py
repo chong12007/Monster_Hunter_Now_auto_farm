@@ -127,9 +127,10 @@ def start_process():
 
 
 def walk_around():
-    random_number = random.choice([random.randint(-180, -150), random.randint(150, 180)])
+    random_number = random.choice([random.randint(-50, 0), random.randint(0, 50)])
     direction_x = random_number
-    direction_y = random_number
+
+    direction_y = 150
 
     try:
         joystick_coordinate = utils.get_icon_coordinate("img/joystick.png")
@@ -138,7 +139,7 @@ def walk_around():
         pyautogui.mouseDown(joystick_coordinate[0], joystick_coordinate[1])
 
         # Move the mouse to the right
-        pyautogui.move(direction_x, direction_y, duration=1.5)  # Adjust the distance as needed
+        pyautogui.move(direction_x, direction_y, duration=1.2)  # Adjust the distance as needed
         # Release the mouse click
         pyautogui.mouseUp()
     except Exception:
@@ -159,3 +160,4 @@ def get_mob_coordinate():
 if __name__ == '__main__':
     create_menu_gui()
     menu_function()
+
