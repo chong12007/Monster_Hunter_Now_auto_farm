@@ -12,7 +12,7 @@ menu = sg.Window("MHNow")
 def create_menu_gui():
     # Set a Layout
     layout = [
-        [sg.Text("Start the game then activate", key="row1", text_color="#509296", font=("Helvetica", 14, "bold"),
+        [sg.Text("Use Long Sword as Weapon", key="row1", text_color="#509296", font=("Helvetica", 14, "bold"),
                  background_color="#f0f0f0")],
         [sg.Text("Please Adjust the screen before using", key="row2", text_color="#509296",
                  font=("Helvetica", 12, "bold"), background_color="#f0f0f0")],
@@ -29,7 +29,7 @@ def create_menu_gui():
 
     screen_resolution_width = ctypes.windll.user32.GetSystemMetrics(0)
 
-    menu_width = screen_resolution_width /2  + 60
+    menu_width = screen_resolution_width / 2 + 60
     menu_height = 30
 
     menu_popup_location = (menu_width, menu_height)  # Specify the desired coordinates of the menu
@@ -77,7 +77,7 @@ def menu_function():
                                 image="img/help.png")
 
         if event == "github":
-            webbrowser.open("https://github.com/chong12007/Trickcal_Revive_auto_clear_level")
+            webbrowser.open("https://github.com/chong12007/MHNow")
 
 
 def start_process():
@@ -108,12 +108,16 @@ def start_process():
 
             error_count = 0
 
-
         except TypeError:
             error_count += 1
             back_coordinate = utils.get_icon_coordinate("img/back.png")
             if back_coordinate is not None:
                 utils.click(back_coordinate, "Go back\n", menu)
+                error_count = 0
+
+            material_go_back_coordinate = utils.get_icon_coordinate("img/material_back.png")
+            if material_go_back_coordinate is not None:
+                utils.click(material_go_back_coordinate, "Go back\n", menu)
                 error_count = 0
 
             if error_count == 2:
@@ -123,7 +127,6 @@ def start_process():
 
 
 def walk_around():
-
     random_number = random.choice([random.randint(-180, -150), random.randint(150, 180)])
     direction_x = random_number
     direction_y = random_number
@@ -132,7 +135,7 @@ def walk_around():
         joystick_coordinate = utils.get_icon_coordinate("img/joystick.png")
 
         # Simulate click and hold
-        pyautogui.mouseDown(joystick_coordinate[0],joystick_coordinate[1])
+        pyautogui.mouseDown(joystick_coordinate[0], joystick_coordinate[1])
 
         # Move the mouse to the right
         pyautogui.move(direction_x, direction_y, duration=1.5)  # Adjust the distance as needed
@@ -140,7 +143,6 @@ def walk_around():
         pyautogui.mouseUp()
     except Exception:
         pass
-
 
 
 def get_mob_coordinate():
@@ -157,4 +159,3 @@ def get_mob_coordinate():
 if __name__ == '__main__':
     create_menu_gui()
     menu_function()
-

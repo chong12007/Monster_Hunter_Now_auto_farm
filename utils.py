@@ -99,17 +99,17 @@ def get_icon_coordinate(icon_path):
     threshold = 0.06
 
     min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
-    print(min_val)
+    # print(min_val)
 
     if min_val < threshold:
         top_left = (min_loc[0], min_loc[1])
         bottom_right = (top_left[0] + template.shape[1], top_left[1] + template.shape[0])
         center = ((top_left[0] + bottom_right[0]) // 2, (top_left[1] + bottom_right[1]) // 2)
         click_coordinate = (center[0], center[1])
-        print(click_coordinate)
+        # print(click_coordinate)
         return click_coordinate
     else:
         return None
 
 if __name__ == '__main__':
-    coordinate = get_icon_coordinate("img/joystick.png")
+    coordinate = get_icon_coordinate("img/material_back.png")
