@@ -38,7 +38,7 @@ Disclaimer : take your own risk for spoofing
 1. Go to Upper right <>Code
 2. Download Zip
 3. Extract the zipped folder at anywhere
-4. Execute the main.exe (some update may not reflect on exe)
+4. Execute the main.exe (some update may not reflect on exe) [the exe might detected as virus by antivirus]
 5. Or Run main.py using pycharm (Recommended) 
 
 ## Setup
