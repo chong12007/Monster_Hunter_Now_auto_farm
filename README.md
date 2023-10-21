@@ -21,7 +21,7 @@ Use Long Sword to 1 shot mob, dont use charge weapon
 6. change the "phone" to your application name
 7. then run  main.py (dont run exe since the changing name of phone dont apply on exe）
 8. you could update the exe by open the terminal with hotkey alt + F12 (delete the exe first)
-9. run this code pyinstaller --onefile main.py
+9. run this code pyinstaller --onefile main.py on terminal
 10. a new exe will generate inside dist foler
 11. move the exe out on the same level as main.py
 12. now exe is updated
