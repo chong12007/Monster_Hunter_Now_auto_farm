@@ -4,8 +4,8 @@ https://youtu.be/UMaefCH2-Uw
 Using Vmos to spoof  
 Use Long Sword to 1 shot mob, dont use charge weapon
 ## How to spoof using vmos
-https://rb.gy/r0nw4
-    Disclaimer : take your own risk for spoofing
+https://rb.gy/r0nw4        
+Disclaimer : take your own risk for spoofing
 
 ## How to use PC to play
 1. Download Vysor https://www.vysor.io/
