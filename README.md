@@ -15,7 +15,7 @@ Use Long Sword to 1 shot mob, dont use charge weapon
 ## Not using Vysor
 1. Other application allow access your phone with pc is fine as well
 2. Just make sure to adjust the screen by changing the app name to Phone
-3. Or change to code using pycharm accroding this instruction
+3. Or change the code using pycharm accroding this instruction
 4. Go to utils.py
 5. press Crtl + f and type phone
 6. change the "phone" to your application name
