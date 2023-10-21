@@ -1,7 +1,7 @@
 # Only Work For PC
 https://youtu.be/UMaefCH2-Uw 
 
-Using Vmos to spoof
+Using Vmos to spoof  
 Use Long Sword for 1 shot mob, dont use charge weapon
 
 ## How to use PC to play
