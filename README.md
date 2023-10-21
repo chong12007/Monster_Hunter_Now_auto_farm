@@ -33,6 +33,7 @@ Disclaimer : take your own risk for spoofing
 
 ## What it Does
 * Slay the small mobs surrounding you.
+* walk around if surrounding dont have small mob
 
 ## How To Download and run the code
 1. Go to Upper right <>Code
