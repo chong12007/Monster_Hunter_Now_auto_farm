@@ -1,6 +1,7 @@
 # Only Work For PC
-https://youtu.be/-Q4hy2FMzEc      
-Setup Vmos and start auto farming
+https://youtu.be/UMaefCH2-Uw 
+
+Using Vmos to spoof
 
 ## How to use PC to play
 1. Download Vysor https://www.vysor.io/
